@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/main.js"></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <style>
+    .attribution {
+      font-size: 1.125rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top">
+    <h1>IP Address Tracker</h1>
+
+    <div>
+      <input type="text" placeholder="Search for any IP address or domain">
+      <button><img src="./images/icon-arrow.svg" alt="Search"></button>
+    </div>
+  </div>
+
+  <div class="info">
+    <div>
+      IP Address
+      <span id='ip-address'></span>
+    </div>
+
+    <div>
+      Location
+      <span id='location'></span>
+    </div>
+
+    <div>
+      Timezone<br>
+      <span id='timezone'></span>
+    </div>
+
+    <div>
+      <!-- add offset value dynamically using the API -->
+      ISP
+      <span id='isp'></span>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Najeeb Ahmad</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+
+</html>
